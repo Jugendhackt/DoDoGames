@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)http://localhost:8080/ -->
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Beispiel</title>
-    <link rel="shortcut icon" href="file:///C:/Users/bader/Pictures/spiel/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="./index_files/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width="1200" height="750" tabindex="-1" style="width: 960px; height: 600px; cursor: default;"></canvas>
-      <div id="unity-loading-bar" style="display: none;">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full" style="width: 100%;"></div>
+          <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      
-
-      
-
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Beispiel</div>
+      </div>
     </div>
     <script>
 
@@ -55,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/spiel.loader.js";
+      var loaderUrl = buildUrl + "/Web.loader.js";
       var config = {
-        dataUrl: buildUrl + "/spiel.data.gz",
-        frameworkUrl: buildUrl + "/spiel.framework.js.gz",
-        codeUrl: buildUrl + "/spiel.wasm.gz",
+        dataUrl: buildUrl + "/Web.data.gz",
+        frameworkUrl: buildUrl + "/Web.framework.js.gz",
+        codeUrl: buildUrl + "/Web.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Beispiel",
@@ -115,7 +117,6 @@
 
       document.body.appendChild(script);
 
-    </script><script src="./index_files/spiel.loader.js.Herunterladen"></script><script src="./index_files/spiel.loader.js(1).Herunterladen"></script>
-  
-
-<script src="./index_files/spiel.framework.js.gz"></script><script src="./index_files/spiel.framework(1).js.gz"></script></body></html>
+    </script>
+  </body>
+</html>
